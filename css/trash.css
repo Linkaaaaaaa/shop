@@ -1,0 +1,436 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: Arial, sans-serif; /* Обновленный шрифт */
+}
+
+.body {
+	background-color: #fdfdfd;
+}
+
+.header h1 {
+    color: #e4e4e4; /* Изменение цвета текста */
+    font-family: 'Arial', sans-serif; /* Изменение шрифта */
+    font-size: 36px; /* Изменение размера шрифта */
+    font-weight: bold; /* Делаем шрифт жирным */
+    text-align: center; /* Выравнивание текста по центру */
+    margin-top: 50px; /* Отступ сверху */
+    margin-bottom: 20px; /* Отступ снизу */
+    text-transform: uppercase; /* Все буквы становятся заглавными */
+    letter-spacing: 1.5px; /* Увеличение расстояния между буквами */
+}
+
+.header {
+	background-color: #959595;
+	height: 150px;
+	color: white;
+	display: flex;
+}
+
+.footer {
+	background-color: #959595;
+	height: 150px;
+	color: white;
+	display: flex;
+}
+
+.contact {
+	margin-left: auto;
+	padding: 30px;
+	text-align: center;
+	color: #000000;
+}
+.logo {
+	padding: 10px;
+	display: flex;
+}
+
+.burger-menu {
+	width: 200px;
+    cursor: pointer;
+    display: inline-block;
+    padding-top: 25%;
+}
+.burger-menu h2 {
+	color: rgb(0, 0, 0);
+	font-size: 20px;
+	text-align: center;
+}
+.burger-menu div {
+    background-color: rgb(0, 0, 0);
+    height: 3px;
+    margin: 5px;
+    width: 30px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.menu{
+    display: none;
+    list-style-type: none;
+    z-index: 100;
+    position: relative;
+}
+
+.menu li{
+	margin-bottom: 0px;
+}
+
+.menu li a {
+	background-color: #636363;
+    color: rgb(0, 0, 0);
+    display: block;
+
+    padding: 10px;
+    text-decoration: none;
+	text-align: center;
+}
+
+/* Стиль для отображения меню при активации */
+.menu.active {
+    display: block;
+}
+
+
+.vxod {
+	color: black;
+	font-size: 25px;
+	display: flex;
+	align-items: center;
+	text-align: right;
+	justify-content: center;
+	margin-left: auto;
+	padding: 30px;
+}
+
+.vxod button { /*Стиль кнопки по умолчанию*/
+	background-color: #00000000; /*Шоб кнопка была прозрачной*/
+	border-radius: 30px;
+	border: 2px solid rgb(72, 71, 71);
+	margin: 1px; /*Делаем оступ, чтобы кнопка при выделении не двигалась*/
+}
+
+
+.vxod button:hover { /*Стиль кнопки при выделении (приписка hover уже об этом говорит)*/
+	cursor: pointer;
+
+	background-color: #00000020; /*Шоб кнопка была немного темнее*/
+	border: 3px solid rgb(95, 95, 95); /* делаем бордер чуть больше, и другого цвета*/
+	margin: 0px; /*Отступ теперь занимает бордер, и смысла в нем нет*/
+	box-shadow: #000000 0px 0px 10px; /*Тени. Цвет, отступ по x, отступ по y, размер тени*/
+}
+
+
+.vxod p {
+	padding: 10px;
+}
+
+main {
+	display: flex;
+}
+
+.filter {
+	min-width: 210px;
+	height: 400px;
+	padding: 16px;
+	border: 1px solid rgb(132, 132, 132);
+    margin:10px ;
+	box-shadow: 0 0 7px 4px #333333;
+	border-radius: 10px ;
+}
+.filter .price {
+	width: 50px;
+	margin-right: 10px;
+	margin-top: 10px;
+	border:2px solid #000000;
+	padding: 5px;
+	border-radius: 10px;
+	margin-bottom: 10px;
+}
+
+.filter .vibor{
+    margin: 10px;
+    padding: 3px;
+    border-radius: 30px;
+    font-size: 16px;
+}
+  .filter .check {
+	margin-top: 10px;
+  }
+
+  .filter .button {
+	padding: 5px 10px;
+	background-color: #007bff;
+	color: white;
+	border: none;
+	cursor: pointer;
+  }
+.cards {
+	display: flex;
+	flex-wrap: wrap;
+	margin-left: 100px;
+	padding-bottom: 40px;
+	gap: 48px;
+}
+
+
+.card {
+	width: 350px;
+	height: 450px;
+	background-color: #e6e6e6;
+	margin: 10px;
+	border-radius: 20px;
+	padding: 20px;
+	text-align: center;
+	color: inherit; /* Убирает синий цвет, делает текст ссылки таким же, как и остальной текст в карточке */
+    text-decoration: none; /* Убирает подчеркивание ссылок */
+}
+
+.card img {
+    width: 90%;      /* Ширина картинки */
+    height: 90%;     /* Высота картинки */
+    object-fit: cover; /* Масштабирует картинку, сохраняя её пропорции, так чтобы она полностью заполнила выделенную область */
+    display: block;    /* Убирает возможный внешний отступ снизу (как у inline элементов) */
+    margin: 0 auto;    /* Центрирует картинку по горизонтали */
+    border-radius: 10px; /* Скругление углов картинки, если нужно */
+	padding-bottom: 10%;
+}
+
+
+.card:hover {
+	border: 5px solid #454547;
+	box-shadow: 0 0 7px 4px #333333;
+	transition: all 0.3s;
+}
+
+.cards h2 {
+	text-align: center;
+	margin: 3%;
+}
+
+.foto {
+    width: 115px;
+	height: 50px;
+}
+
+.tovar {
+	background-color: #e6e6e6;
+	margin: 10px;
+	border-radius: 20px;
+	padding: 20px;
+	text-align: left;
+}
+
+.otz {
+	background-color: #e6e6e6;
+	margin: 10px;
+	border-radius: 20px;
+	padding: 20px;
+	text-align: center;
+}
+
+.otz1 {
+	background-color: #e6e6e6;
+	border-radius: 20px;
+	text-align: left;
+	width: 100%;
+	padding: 10px;
+	margin: 10px;
+}
+.pic {
+	display: flex;
+	flex-direction: row-reverse;
+	align-items: center;
+}
+
+.div {
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+	margin: 15px;
+}
+
+.cnopka {
+    color: black;
+	font-size: 10px;
+	display: flex;
+	text-align: right;
+	
+}
+
+.cnopka button { /*Стиль кнопки по умолчанию*/
+	background-color: #00000000; /*Шоб кнопка была прозрачной*/
+	border-radius: 30px;
+	border: 2px solid rgb(72, 71, 71);
+    font-size: 15px;
+}
+  
+.cnopkaa {
+    color: black;
+	font-size: 10px;
+	flex-direction: row-reverse;
+	text-align: left;
+}
+
+.cnopkaa button { /*Стиль кнопки по умолчанию*/
+	background-color: #00000000; /*Шоб кнопка была прозрачной*/
+	border-radius: 30px;
+	border: 2px solid rgb(72, 71, 71);
+	font-size: 15px;
+}
+
+.politic {
+	justify-content: space-between;
+	color: #000000;
+	margin: auto;
+}
+
+ .osnov{
+	display: flex;
+ }
+
+.otz{
+	padding: 10px;
+	margin-bottom: 10px;
+	border-radius: 10px;
+	margin: 10px;
+} 
+
+.kto {
+	font-weight: bold;
+}
+
+.date {
+	color: #888;
+	font-size: 0.8em;
+}
+
+.content {
+	margin-top: 10px;
+}
+
+.p {
+	font-size: 30px;
+	text-align: center;
+	padding: 10px;
+}
+.footer__filter-btn span:nth-child(1) {
+	transform: translateX(-10px) rotate(45deg);
+  }
+
+@media only screen and (max-width: 1024px) {
+    /* Стили для экранов шириной менее 1024px (планшетов)*/
+
+    .header,
+    .footer {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        padding: 20px;
+    }
+	.header h1 {
+		margin: 0 auto; /* Устанавливаем автоматический отступ справа и слева для центрирования */
+		padding: 10px; /* Добавляем внутренние отступы */
+		max-width: 60%; /* Ограничиваем максимальную ширину заголовка */
+		text-align: center; /* Выравниваем текст по центру */
+		background-color: #4c4c4c80; /* Цвет фона для заголовка */
+		color: #dfdfdf; /* Цвет текста */
+		font-family: 'Arial', sans-serif; /* Шрифт */
+		font-size: 24px; /* Размер шрифта */
+		border-radius: 10px; /* Скругляем углы */
+		box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* Добавляем тень для создания эффекта "всплывающего" элемента */
+		border: 1px solid #ddd; /* Добавляем тонкую границу вокруг заголовка */
+	}
+
+    .contact,
+    .vxod {
+        margin-left: 0; /* Убрать автоматический отступ слева */
+        width: 100%; /* Занимает всю доступную ширину */
+    }
+
+    main {
+        flex-direction: column; /* Элементы внутри <main> будут располагаться вертикально */
+    }
+	.burger-menu {
+		width: 100%; /* Заставляет .burger-menu занимать всю ширину страницы */
+		display: block; /* Убедитесь, что .burger-menu ведет себя как блочный элемент */
+		padding-top: 25px;
+	
+		}
+	.filter {
+		width: 70%; /* Ширина контейнера */
+		margin-left: auto;
+		margin-right: auto;
+		height: auto;
+
+	}
+	nav {
+	
+		width: 50%;
+	}
+	.cards {
+		display: flex;
+		justify-content: center; /* Центрирует дочерние элементы по горизонтали */
+		align-items: center; /* Центрирует дочерние элементы по вертикали (если это необходимо) */
+		flex-wrap: wrap; /* Позволяет дочерним элементам переноситься на новую строку, если не хватает места */
+		gap: 24px; /* Расстояние между элементами */
+		margin-left: auto;
+		margin-right: auto;
+	}
+	
+
+}
+
+@media only screen and (max-width: 768px) {
+    /* Стили для экранов шириной менее 768px (телефонов)*/
+
+   .header,
+   .footer {
+       padding-top :10px ;
+       padding-bottom :10px ;
+	   padding: 0px;
+   }
+
+   .burger-menu {
+    width: 100%; /* Заставляет .burger-menu занимать всю ширину страницы */
+    display: block; /* Убедитесь, что .burger-menu ведет себя как блочный элемент */
+	padding-top: 25px;
+
+	}
+nav {
+	
+	width: 100%;
+}
+
+   .menu ul{
+       text-align:left ;
+   }
+
+   .menu li{
+       font-size :18px ;
+
+   }
+
+   main{
+       flex-direction :column ;
+
+   }
+
+   filter ,
+    cards{
+    width:auto ;
+    margin-left:auto ;
+    margin-right:auto ;
+
+	}
+	.cards{
+		display:flex ;
+		flex-wrap:no-wrap ;
+		flex-direction :column ;
+		gap: 16px ;
+
+	}
+
+}
+
